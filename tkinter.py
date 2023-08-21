@@ -18,7 +18,7 @@ import webbrowser
 def instance():
     myec2=boto3.client("ec2","ap-south-1")
     Launch=myec2.run_instances(
-    ImageId="ami-0ded8326293d3201b",
+    ImageId="",
     InstanceType="t2.micro",
     MaxCount=1,
     MinCount=1
@@ -62,10 +62,6 @@ def feature():
                 break
     
     cv2.destroyAllWindows()
-
-
-
-
 
 def create_s3_bucket(bucket_name, region='ap-south-1'):
 
@@ -135,7 +131,7 @@ def send_whatsapp_message():
 def send_mail():
     from_email = "azfaralam440@gmail.com"
     to_email = "adityajn108@gmail.com"
-    password = "aoupsbqacybxaiif"  
+    password = ""  
 
     subject = "Test Email from Python by azfar"
     body = "This is a test email sent using Python."
@@ -159,10 +155,10 @@ def send_mail():
         messagebox.showerror("Error", "Unable to send email.\n" + str(e))
 
 def send_sms():
-    account_sid = 'AC4defd2204a859d272eb14cf1ca2a3182'
-    auth_token =  'f1877f808ee8f03fe5628bfc5470189a'
-    from_phone = '+13184077055'
-    to_phone = "+916375997945"  
+    account_sid = ''
+    auth_token =  ''
+    from_phone = ''
+    to_phone = ""  
 
     client = Client(account_sid, auth_token)
 
