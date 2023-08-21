@@ -10,13 +10,13 @@ import cgi
 import boto3
 
 #AWS credentials and region
-aws_access_key = 'AKIAS4RXDPOZEYAANTHE'
-aws_secret_key = 'JzyGSCl4cFsaIzLJqwbgbisDZnwbXXLaMuqiq1XT'
+aws_access_key = ''
+aws_secret_key = ''
 region = 'ap-south-1'  # Change this to your desired region
 
 # EC2 instance settings
 instance_type = 't2.micro'  # Change this to your desired instance type
-ami_id = 'ami-0ded8326293d3201b'  # Change this to your desired AMI ID
+ami_id = ''  # Change this to your desired AMI ID
 
 
 # Create a Boto3 EC2 client
